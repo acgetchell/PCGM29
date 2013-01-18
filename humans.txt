@@ -4,6 +4,10 @@
 # TEAM
 
     <name> -- <role> -- <twitter>
+Steve Carlip        Content
+Joshua Cooperman    Content
+Colin Cunliff       Content
+Adam Getchell       Programming     @adamgetchell
 
 # THANKS
 
