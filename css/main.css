@@ -4,7 +4,7 @@
    Author's custom styles
    ========================================================================== */
 
-.hero-unit .thumbnail {margin-right: 2%;}
+.hero-unit .thumbnail {margin-right: 2%; min-width: 180px; width: 20%;}
 
 
 

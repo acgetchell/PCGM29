@@ -11,7 +11,8 @@ Adam Getchell       Programming     @adamgetchell
 
 # THANKS
 
-    <name>
+    Alan Lai for his cool multipoint walking map!
+    https://github.com/anlai/anlai.github.com/tree/master/jqueryGPositions
 
 # TECHNOLOGY COLOPHON
 
