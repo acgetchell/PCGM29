@@ -4,6 +4,7 @@
 # TEAM
 
     <name> -- <role> -- <twitter>
+Trish Ang           Design          @feesh
 Steve Carlip        Content
 Joshua Cooperman    Content
 Colin Cunliff       Content
