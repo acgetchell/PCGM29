@@ -9,10 +9,8 @@
         <title>Practical Information</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-        
+
         <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" type="text/css" href="css/mapmain.css" />
-        <link rel="stylesheet" type="text/css" href="css/jquery.gPositions.css" />
         <style>
             body {
                 padding-top: 60px;
@@ -20,22 +18,9 @@
             }
         </style>
         <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
-        
+        <link rel="stylesheet" href="css/main.css">
+
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-        <script type="text/javascript" src="js/vendor/jquery-1.8.3.min.js" ></script>
-        <script type="text/javascript" src="js/jquery-ui-1.8.13.min.js" ></script>
-	<script src="https://maps-api-ssl.google.com/maps/api/js?v=3&sensor=false" type="text/javascript"></script>
-	<script type="text/javascript" src="https://raw.github.com/anlai/anlai.github.com/master/jqueryGPositions/jquery.gPositions.js"></script>
-
-		<script type="text/javascript">
-
-			$(function(){
-
-				$("#map-with-routing").gPositions({mode: MapMode.ROUTING, displayDirections: true});
-
-			});
-
-		</script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -64,42 +49,50 @@
             </div>
         </div>
 
-        <div id="main">
-            <section>
+        <div class="container">
 
-    			<header>
-					<h3>
-						Walking map with multi-point routing
-					</h3>
-				</header>
+            <h2>Practical Information</h2>
+            
+            For general information about Davis, try the <a href="http://daviswiki.org">Davis Wiki</a>
+            
+            <h3>Transportation:</h3>
+            
+            Davis is located in California's Central Valley, about 15 miles west of Sacramento. You can get here by <a href="#air">Air</a>, <a href="#train">Train</a>, or <a href="#car">Car</a>.
+            <p>
+                Downtown Davis and the UC Davis campus are small enough that you should be able to walk wherever you need to go. Here is a useful <a href="map.html">walking map</a>.
+            </p>
+            
+            <a id="air">Air</a>:
+            
+            <p>
+                The nearest airport, Sacramento International Airport (SMF), is about 25 miles from downtown Davis. Airport transportation includes the <a href="https://www.davisairporter.com">Davis Airporter</a> (800-565-5153; reservations needed 36 hours in advance) and the <a href="http://www.supershuttle.com/">SuperShuttle</a> (kiosk at the airport, sometimes long waits). Taxi fare is about $70.
+            </p>
+            
+            <a id="train">Train</a>:
+            
+            <p>
+                Davis is on the <a href="http://www.capitolcorridor.org">Capitol Corridor</a> train line, connecting to the San Francisco Bay area and San Jose. Trains run about 15 times per day. The <a href="http://www.amtrak.com/">Amtrak</a> California Zephyr and Coastal Starlight trains each run through Davis once a day, but the run may be quite late.
+            </p>
+            
+            <a id="car">Car</a>:
+            
+            <p>
+                Davis is located on I-80, near the junction with I-5 in Sacramento. For directions to the Physics Department, see the <a href="http://www.physics.ucdavis.edu/visitors/physics_map.html">visitor map</a>.
+            </p>
+            
+            <h3>Lodging:</h3>
+            
+            We are booking a block of rooms in local hotels for the conference. Check back here soon for more information.
+            <p>
+                You can find a list of hotels near the campus <a href="http://www.physics.ucdavis.edu/visitors/local_accommodation.html">here</a>.
+            </p>
+            
+            <h3>Food:</h3>
+            
+            An extensive list of places to eat can be found in the <a href="http://daviswiki.org/Restaurants">Davis Wiki</a>. A shorter list of restaurants recommended by conference organizers will appear here soon.
 
-				<div id="map-with-routing" style="margin: 0px 0px 20px">
-
-					<div class="gp-map" style="height:350px; width: 550px;"></div>
-
-					<div class="gp-coordinate" data-lat="38.53702" data-lng="-121.7518">
-						<dt class="gp-name">Roessler Hall</dt>
-						<dd class="gp-description">Conference lecture hall</dd>
-					</div>
-					<div class="gp-coordinate" data-lat="38.53371491546687" data-lng="-121.74778461456299">
-						<dt class="gp-name" >South Entry Parking Structure</dt>
-						<dd class="gp-description">Main Parking Structure for guests</dd>
-					</div>
-					<div class="gp-coordinate gp-default" data-lat="38.54198948702892" data-lng="-121.74997329711914">
-						<dt class="gp-name">Memorial Union</dt>
-					</div>
-					<div class="gp-coordinate" data-lat="38.544523698853574" data-lng="-121.75756931304932">
-						<dt class="gp-name">Bixby Hall</dt>
-						<dd class="gp-description">Dorms</dd>
-					</div>
-					<div class="gp-coordinate" data-lat="38.54219088461238" data-lng="-121.75881385803223">
-						<dt class="gp-name">The ARC</dt>
-					</div>
-				</div> <!-- End of map container -->
-
-				<div style="clear:both;"></div>
-			</section>
-        </div>
+            
+            
             <hr>
 
             <footer>
@@ -107,5 +100,19 @@
             </footer>
 
         </div> <!-- /container -->
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.8.3.min.js"><\/script>')</script>
+
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <script src="js/main.js"></script>
+
+        <script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
     </body>
 </html>
