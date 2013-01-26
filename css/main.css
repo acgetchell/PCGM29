@@ -6,13 +6,9 @@
 
 .hero-unit .thumbnail {margin-right: 2%; min-width: 180px; width: 20%;}
 .hero-unit {background-color: #b2bdcf;}
-.navbar {
-    .navbar-inner {
-        background-color: #c99700;
-        background-image: none;
-    }
-}
 
+@navBarBgStart: #3D368B;
+@navBarBgEnd: #232051;
 
 
 
