@@ -7,8 +7,7 @@
 .hero-unit .thumbnail {margin-right: 2%; min-width: 180px; width: 20%;}
 .hero-unit {background-color: #b2bdcf;}
 
-@navBarBgStart: #3D368B;
-@navBarBgEnd: #232051;
+.nav-header {color: #002855;}
 
 
 
